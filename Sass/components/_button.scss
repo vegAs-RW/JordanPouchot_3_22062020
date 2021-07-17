@@ -1,7 +1,14 @@
+.button{
+    width: 100%;
+    text-align: center;
+    margin: 2rem 0;
+}
+
 .btn {
     @include gradient;
     @include border-btn;
-    color: white;
+    color: $color-white;
     border: none;
     padding: 1rem;
+    cursor: pointer;
 }
