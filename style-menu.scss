@@ -1,0 +1,136 @@
+@import "Sass/bases/font";
+@import "Sass/utils/_variables";
+@import "Sass/utils/_mixins.scss";
+@import "Sass/bases/_base.scss";
+@import "Sass/components/_button.scss";
+@import "Sass/layout/_footer.scss";
+
+
+
+//********** base *********
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: $font-text;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style-type: none;
+}
+
+h1 {
+    margin: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    & p {
+        margin: 0 0 1rem 0;
+        font-family: $font-title;
+        font-size: 2rem; 
+    } 
+    & i {
+        margin: 0 0 0 1rem;
+        position: absolute;
+        left: 1rem;
+        top: 1rem;
+    }
+}
+
+.image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    & img {
+        object-fit: cover;
+        width: 100%;
+        height: 250px;
+        z-index: -1;
+    }
+}
+
+main {
+    position: relative;
+}
+
+.menu {
+    border-radius: 2rem 2rem 0 0;
+    z-index: 1;
+    position: absolute;
+    top: -2rem;
+    background-color: $color-bc-light;
+    width: 100%;
+    padding: 2rem 0 2rem 0;
+    
+    
+}
+
+.menu_title {
+    display: flex;
+    margin: 0 0 2rem 1rem;
+    font-family: $font-title;
+    position: relative;
+    & .heart {
+        display: flex;
+        position: absolute;
+        right: 1rem;
+        top: .5rem;
+        font-size: 1.5rem;
+    }
+}
+
+.menu_container {
+    margin: 0 1rem;
+    &_content {
+        & h3 {
+            margin-top: 2rem;
+        }
+    }
+}
+
+.menu_card_content {
+    background-color: $color-white;
+    @include border-card;
+    padding: 1rem;
+    position: relative;
+    margin: 0 0 1rem 0;
+    &_title {
+        margin: 0;
+        font-weight: bold;
+    }
+    &_describ {
+        margin: .3rem 0 0 0;
+        font-weight: lighter;
+        font-size: .8rem;
+    }
+    &_price {
+        position: absolute;
+        bottom: 15px;
+        right: 15px;
+        font-weight: bold;
+        font-size: .8rem;
+    }
+    &_select {
+        display: none;
+    }
+}
+
+.btn {
+    padding: 1rem 3rem;
+}
+
+footer {
+    position: relative;
+    bottom: -70rem;
+}
