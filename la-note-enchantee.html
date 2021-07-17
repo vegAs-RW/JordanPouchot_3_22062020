@@ -3,10 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style-menu.css">
     <title>La note enchantée</title>
     <script src="https://kit.fontawesome.com/6071a3c9ab.js" crossorigin="anonymous"></script>
 </head>
@@ -16,7 +13,7 @@
             <i class="fas fa-arrow-left"></i>
         </a>
         <div class="logo">
-            <img src="images/logo/ohmyfood.png" alt="logo">
+            <p>ohmyfood</p>
         </div>
     </header>
     <div class="image">
@@ -142,29 +139,22 @@
                     </div>
                 </div>
             </div>
+            <div class="button">
             <button class="btn" type="button">
                 <span>Commander</span>
-            </button>
+            </button></div>
         </section>
     </main>
     <footer>
         <div class="logo_footer">
-            <img src="images/logo/ohmyfood.png" alt="logo">
+            <a href="index.html">ohmyfood</a>
         </div>
-        <ul>
-            <li>
-                <a href="#submit"><i class="fas fa-utensils"></i> Proposer un restaurant</a>
-            </li>
-            <li>
-                <a href="#partner"><i class="fas fa-hands-helping"></i> Devenir partenaire</a>
-            </li>
-            <li>
-                <a href="#mention">Mentions légales</a>
-            </li>
-            <li>
-                <a href="@mailto:contact@ohmyfood.fr">Contact</a>
-            </li>
-        </ul>
+        <div class="footer_link">
+            <a href="#submit" class="footer_link_row"><i class="fas fa-utensils"></i> Proposer un restaurant</a>
+            <a href="#partner" class="footer_link_row"><i class="fas fa-hands-helping"></i> Devenir partenaire</a>
+            <a href="#mention">Mentions légales</a>
+            <a href="mailto:contact@ohmyfood.fr">Contact</a>
+        </div>    
     </footer>
 </body>
 </html>

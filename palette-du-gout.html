@@ -3,10 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style-menu.css">
     <title>La palette du goût</title>
     <script src="https://kit.fontawesome.com/6071a3c9ab.js" crossorigin="anonymous"></script>
 </head>
@@ -16,11 +13,11 @@
             <i class="fas fa-arrow-left"></i>
         </a>
         <div class="logo">
-            <img src="images/logo/ohmyfood.png" alt="logo">
+            <p>ohmyfood</p>
         </div>
     </header>
     <div class="image">
-        <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="assiette dans le restaurant la palettedu gout">
+        <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="assiette dans le restaurant la palette du gout">
     </div>
     <main>
         <section class="menu">
@@ -34,7 +31,7 @@
             <div class="menu_container">
                 <div class="menu_container_content">
                     <h3>Entrées</h3>
-                    <div class="menu_card">
+                    <div class="menu_card card_1">
                         <div class="menu_card_content">
                             <p class="menu_card_content_title">Fricassée d'escargot</p>
                             <p class="menu_card_content_describ">Au piment d'Espelette</p>
@@ -44,7 +41,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="menu_card">
+                    <div class="menu_card card_2">
                         <div class="menu_card_content">
                             <p class="menu_card_content_title">Foie gras de canard mi-cuit</p>
                             <p class="menu_card_content_describ">Et ses copeaux de truffe noire</p>
@@ -54,7 +51,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="menu_card">
+                    <div class="menu_card card_3">
                         <div class="menu_card_content">
                             <p class="menu_card_content_title">Oeuf au plat</p>
                             <p class="menu_card_content_describ">Assaisonné à la truffe sur lit de caviar</p>
@@ -67,7 +64,7 @@
                 </div>
                 <div class="menu_container_content">
                     <h3>Plats</h3>
-                    <div class="menu_card">
+                    <div class="menu_card card_1">
                         <div class="menu_card_content">
                             <p class="menu_card_content_title">Filet de boeuf aux herbes</p>
                             <p class="menu_card_content_describ">Accompagné de sa ribambelle de légumes</p>
@@ -77,7 +74,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="menu_card">
+                    <div class="menu_card card_2">
                         <div class="menu_card_content">
                             <p class="menu_card_content_title">Parmentier de queue de boeuf</p>
                             <p class="menu_card_content_describ">À la truffe noire sur sa purée de panais</p>
@@ -87,8 +84,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="menu_card">
-                        <div class="menu_card_content">
+                    <div class="menu_card card_3">
+                        <div class="menu_card_content" >
                             <p class="menu_card_content_title">Filet de turbot</p>
                             <p class="menu_card_content_describ">Aux agrumes</p>
                             <div class="menu_card_content_price">44€</div>
@@ -100,7 +97,7 @@
                 </div>
                 <div class="menu_container_content">
                     <h3>Desserts</h3>
-                    <div class="menu_card">
+                    <div class="menu_card card_1">
                         <div class="menu_card_content">
                             <p class="menu_card_content_title">Paris-Brest</p>
                             <p class="menu_card_content_describ">Revisité</p>
@@ -110,7 +107,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="menu_card">
+                    <div class="menu_card card_2">
                         <div class="menu_card_content">
                             <p class="menu_card_content_title">Macaron au chocolat d'exception</p>
                             <p class="menu_card_content_describ">Et glace à la vanille de Madagascar</p>
@@ -120,7 +117,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="menu_card">
+                    <div class="menu_card card_3">
                         <div class="menu_card_content">
                             <p class="menu_card_content_title">Mousse au chocolat</p>
                             <p class="menu_card_content_describ">Au piment d'Espelette et à la truffe noire</p>
@@ -132,29 +129,23 @@
                     </div>
                 </div>
             </div>
-            <button class="btn" type="button">
-                <span>Commander</span>
-            </button>
+            <div class="button">
+                <button class="btn" type="button">
+                    <span>Commander</span>
+                </button>
+            </div>
         </section>
     </main>
     <footer>
         <div class="logo_footer">
-            <img src="images/logo/ohmyfood.png" alt="logo">
+            <a href="index.html">ohmyfood</a>
         </div>
-        <ul>
-            <li>
-                <a href="#submit"><i class="fas fa-utensils"></i> Proposer un restaurant</a>
-            </li>
-            <li>
-                <a href="#partner"><i class="fas fa-hands-helping"></i> Devenir partenaire</a>
-            </li>
-            <li>
-                <a href="#mention">Mentions légales</a>
-            </li>
-            <li>
-                <a href="@mailto:contact@ohmyfood.fr">Contact</a>
-            </li>
-        </ul>
+        <div class="footer_link">
+            <a href="#submit" class="footer_link_row"><i class="fas fa-utensils"></i> Proposer un restaurant</a>
+            <a href="#partner" class="footer_link_row"><i class="fas fa-hands-helping"></i> Devenir partenaire</a>
+            <a href="#mention">Mentions légales</a>
+            <a href="mailto:contact@ohmyfood.fr">Contact</a>
+        </div>    
     </footer>
 </body>
 </html>
