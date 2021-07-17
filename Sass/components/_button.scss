@@ -1,0 +1,7 @@
+.btn {
+    @include gradient;
+    @include border-btn;
+    color: white;
+    border: none;
+    padding: 1rem;
+}

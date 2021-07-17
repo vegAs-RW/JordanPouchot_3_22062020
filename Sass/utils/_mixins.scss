@@ -1,0 +1,16 @@
+//********** Mixins **********
+
+@mixin border-card {
+    border-radius: 1rem; 
+    box-shadow: 5px 4px 10px 4px rgba(91,91,91,0.39);   
+}
+
+@mixin border-btn {
+    border-radius: 2rem; 
+    box-shadow: 2px 7px 10px -2px rgba(91,91,91,0.39);
+}
+
+@mixin gradient {
+    background: #ff76da;
+    background: linear-gradient(174deg,#ff76da 0%, #9356dc 80%);
+}
