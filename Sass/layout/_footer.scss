@@ -10,13 +10,12 @@ footer {
     }
 }
 
-.footer_link_row {
-    display: flex;
-}
-
 .footer_link {
     display: flex;
     flex-direction: column;
+    &_row {
+        display: flex;
+    }
     & a {
         margin: 0 0 .5rem 1rem;
     }

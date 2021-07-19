@@ -11,4 +11,7 @@
     border: none;
     padding: 1rem;
     cursor: pointer;
+    &:hover {
+        @include button-hover;
+    }
 }
