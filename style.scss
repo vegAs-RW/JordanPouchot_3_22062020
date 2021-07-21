@@ -1,3 +1,5 @@
+/********** Import/Sass **********/
+
 @import "Sass/bases/_font";
 @import "Sass/utils/_variables";
 @import "Sass/utils/_mixins.scss";
@@ -8,6 +10,8 @@
 @import "Sass/layout/header";
 @import "Sass/layout/_footer.scss";
 
+
+/*********** Main **********/
 
 .menu {
     padding: 2rem 1rem;
@@ -21,8 +25,11 @@
         background-color: $color-bc-light;
         @include border-card;
         align-items: center;
+        &:hover > .fas {
+            color: $color-primary;     
+        }
         &:hover {
-            background-color: $color-primary-light;
+           background-color: $color-primary-light;
         }
         & span {
             position: absolute;
@@ -84,7 +91,6 @@
     object-fit: cover;
     margin: 1rem;
     position: relative;
-    
     & img {
         width: 100%;
         height: 200px;
@@ -105,8 +111,6 @@
 .restaurant_list_card_info {
     margin: 1rem 0 1rem 1rem;
     position: relative;
-
-
     & h3 {
         margin: 0;
         font-weight: bold;
@@ -127,33 +131,25 @@
     display: none;
 }
 
-.menu_list_link:hover > .fas {
-    color: $color-primary;
-}
+
+/*********** Media Queries ************/
 
 @media screen and (min-width: 600px) {
     .restaurant_list_card {
         margin: 2rem 1rem;
-}
-    footer {
-        text-align: center;
-        & .logo_footer {
-            font-size: 2rem;
-            margin: 1rem 0 1rem 0;
-        }
     }
-    .footer_link {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: 1fr;
-        grid-gap: 2rem;
-        padding: 2rem 0;
-        & i {
-            font-size: 1rem;
+    .footer {
+        @include flexbox-center;
+        &_bloc {
+            margin-bottom: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
-    }
-    footer a {
-        text-align: initial;
+        &_link {
+            display: flex;
+            justify-content: space-between;
+        }
     }
 }
 
