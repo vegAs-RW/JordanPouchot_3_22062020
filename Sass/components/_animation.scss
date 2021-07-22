@@ -1,0 +1,51 @@
+
+@for $i from 1 through 4 {
+    #fav#{$i}{
+        position: absolute;
+        left: -9999px;
+    }
+}
+
+@for $var from 1 through 4 {
+    .label__fav#{$var}--accueil{
+        font-size: 2rem;
+        position: absolute;
+        top: 5px;
+        right: 5%;
+        color: black;
+    }
+    .label__fav#{$var}--resto{
+        font-size: 1.5rem;
+        color: black;
+        position: absolute;
+        right: 30px;
+        top: 10px;
+    }
+    .label__fav#{$var}--accueil::after, .label__fav#{$var}--resto::after{
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 900;
+        background: linear-gradient(174deg,#ff76da 0%, #9356dc 80%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+        content: "\f004";
+        position: absolute;
+        top: 0;  
+        left: 0;
+        opacity: 0;
+        transition: opacity .5s ease;
+    }
+}
+
+@for $var from 1 through 4 {
+    #fav#{$var}:checked + .label__fav#{$var}--accueil, #fav#{$var}:checked + .label__fav#{$var}--resto{
+        i {
+            opacity: 0;
+        }
+        &::after{
+            opacity: 1;
+            transition: opacity 1s ease .2s; 
+        }
+    }
+}
