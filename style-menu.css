@@ -199,51 +199,192 @@ h1 {
           box-shadow: 2px 7px 10px -2px rgba(91, 91, 91, 0.6);
 }
 
-.footer {
-  width: 100%;
-  background-color: #353535;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+#heart1 {
+  position: absolute;
+  left: -9999px;
 }
 
-.footer_bloc {
-  padding: 1rem 2rem;
+#heart2 {
+  position: absolute;
+  left: -9999px;
 }
 
-.footer_bloc .logo_footer {
-  font-family: "shrikhand", sans-serif;
+#heart3 {
+  position: absolute;
+  left: -9999px;
+}
+
+#heart4 {
+  position: absolute;
+  left: -9999px;
+}
+
+.label_heart1-accueil {
+  font-size: 2rem;
+  position: absolute;
+  top: 5px;
+  right: 5%;
+  color: black;
+}
+
+.label_heart1-resto {
   font-size: 1.5rem;
-  padding: 1rem 0;
+  color: black;
+  position: absolute;
+  right: 30px;
+  top: 10px;
 }
 
-.footer_bloc a {
-  color: #FFFFFF;
+.label_heart1-accueil::after, .label_heart1-resto::after {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  background: linear-gradient(174deg, #ff76da 0%, #9356dc 80%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  content: "\f004";
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  -webkit-transition: opacity .5s ease;
+  transition: opacity .5s ease;
 }
 
-.footer_link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 100%;
+.label_heart2-accueil {
+  font-size: 2rem;
+  position: absolute;
+  top: 5px;
+  right: 5%;
+  color: black;
 }
 
-.footer_link_row {
-  margin: .5rem 0;
-  cursor: pointer;
-  color: #FFFFFF;
+.label_heart2-resto {
+  font-size: 1.5rem;
+  color: black;
+  position: absolute;
+  right: 30px;
+  top: 10px;
 }
 
-.footer_link_row:hover .footer_link_row {
-  text-decoration: underline;
+.label_heart2-accueil::after, .label_heart2-resto::after {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  background: linear-gradient(174deg, #ff76da 0%, #9356dc 80%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  content: "\f004";
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  -webkit-transition: opacity .5s ease;
+  transition: opacity .5s ease;
 }
 
-.footer_link_row i {
-  margin-right: .5rem;
+.label_heart3-accueil {
+  font-size: 2rem;
+  position: absolute;
+  top: 5px;
+  right: 5%;
+  color: black;
+}
+
+.label_heart3-resto {
+  font-size: 1.5rem;
+  color: black;
+  position: absolute;
+  right: 30px;
+  top: 10px;
+}
+
+.label_heart3-accueil::after, .label_heart3-resto::after {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  background: linear-gradient(174deg, #ff76da 0%, #9356dc 80%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  content: "\f004";
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  -webkit-transition: opacity .5s ease;
+  transition: opacity .5s ease;
+}
+
+.label_heart4-accueil {
+  font-size: 2rem;
+  position: absolute;
+  top: 5px;
+  right: 5%;
+  color: black;
+}
+
+.label_heart4-resto {
+  font-size: 1.5rem;
+  color: black;
+  position: absolute;
+  right: 30px;
+  top: 10px;
+}
+
+.label_heart4-accueil::after, .label_heart4-resto::after {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  background: linear-gradient(174deg, #ff76da 0%, #9356dc 80%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  content: "\f004";
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  -webkit-transition: opacity .5s ease;
+  transition: opacity .5s ease;
+}
+
+#heart1:checked + .label_heart1-accueil i, #heart1:checked + .label_heart1-resto i {
+  opacity: 0;
+}
+
+#heart1:checked + .label_heart1-accueil::after, #heart1:checked + .label_heart1-resto::after {
+  opacity: 1;
+  -webkit-transition: opacity 1s ease .2s;
+  transition: opacity 1s ease .2s;
+}
+
+#heart2:checked + .label_heart2-accueil i, #heart2:checked + .label_heart2-resto i {
+  opacity: 0;
+}
+
+#heart2:checked + .label_heart2-accueil::after, #heart2:checked + .label_heart2-resto::after {
+  opacity: 1;
+  -webkit-transition: opacity 1s ease .2s;
+  transition: opacity 1s ease .2s;
+}
+
+#heart3:checked + .label_heart3-accueil i, #heart3:checked + .label_heart3-resto i {
+  opacity: 0;
+}
+
+#heart3:checked + .label_heart3-accueil::after, #heart3:checked + .label_heart3-resto::after {
+  opacity: 1;
+  -webkit-transition: opacity 1s ease .2s;
+  transition: opacity 1s ease .2s;
+}
+
+#heart4:checked + .label_heart4-accueil i, #heart4:checked + .label_heart4-resto i {
+  opacity: 0;
+}
+
+#heart4:checked + .label_heart4-accueil::after, #heart4:checked + .label_heart4-resto::after {
+  opacity: 1;
+  -webkit-transition: opacity 1s ease .2s;
+  transition: opacity 1s ease .2s;
 }
 
 /*********** Base **********/
@@ -313,7 +454,6 @@ header i {
   margin-top: -28px;
   padding: 0 1rem;
   width: 100%;
-  max-width: 1230px;
   border-radius: 2rem 2rem 0 0;
   background-color: #F6F6F6;
 }
@@ -337,30 +477,6 @@ header i {
 .menu_header_title {
   font-family: "shrikhand", sans-serif;
   padding-top: 2rem;
-}
-
-.menu_header_heart .heart {
-  width: 30px;
-  stroke-width: 30;
-  stroke: black;
-  fill: white;
-  cursor: pointer;
-}
-
-.menu_header_heart .heart-full {
-  position: absolute;
-  fill: url(#text-fill);
-  stroke: none;
-}
-
-.menu_header_heart .heart-empty {
-  position: relative;
-}
-
-.menu_header_heart .heart-empty:hover {
-  opacity: 0;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
 }
 
 .menu_container {
@@ -546,6 +662,53 @@ header i {
           animation-delay: 1.9s;
 }
 
+.footer {
+  width: 100%;
+  background-color: #353535;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer_bloc {
+  padding: 1rem 2rem;
+}
+
+.footer_bloc .logo_footer {
+  font-family: "shrikhand", sans-serif;
+  font-size: 1.5rem;
+  padding: 1rem 0;
+}
+
+.footer_bloc a {
+  color: #FFFFFF;
+}
+
+.footer_link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.footer_link_row {
+  margin: .5rem 0;
+  cursor: pointer;
+  color: #FFFFFF;
+}
+
+.footer_link_row:hover .footer_link_row {
+  text-decoration: underline;
+}
+
+.footer_link_row i {
+  margin-right: .5rem;
+}
+
 /********** Media Queries **********/
 @media screen and (min-width: 800px) {
   .menu {
@@ -590,6 +753,10 @@ header i {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+  .label__fav1--resto {
+    right: 30px;
+    top: -24px;
   }
 }
 /*# sourceMappingURL=style-menu.css.map */
