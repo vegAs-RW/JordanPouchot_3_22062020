@@ -1,27 +1,27 @@
 
 @for $i from 1 through 4 {
-    #fav#{$i}{
+    #heart#{$i}{
         position: absolute;
         left: -9999px;
     }
 }
 
 @for $var from 1 through 4 {
-    .label__fav#{$var}--accueil{
+    .label_heart#{$var}-accueil{
         font-size: 2rem;
         position: absolute;
         top: 5px;
         right: 5%;
         color: black;
     }
-    .label__fav#{$var}--resto{
+    .label_heart#{$var}-resto{
         font-size: 1.5rem;
         color: black;
         position: absolute;
         right: 30px;
         top: 10px;
     }
-    .label__fav#{$var}--accueil::after, .label__fav#{$var}--resto::after{
+    .label_heart#{$var}-accueil::after, .label_heart#{$var}-resto::after{
         font-family: 'Font Awesome 5 Free';
         font-weight: 900;
         background: linear-gradient(174deg,#ff76da 0%, #9356dc 80%);
@@ -39,7 +39,7 @@
 }
 
 @for $var from 1 through 4 {
-    #fav#{$var}:checked + .label__fav#{$var}--accueil, #fav#{$var}:checked + .label__fav#{$var}--resto{
+    #heart#{$var}:checked + .label_heart#{$var}-accueil, #heart#{$var}:checked + .label_heart#{$var}-resto{
         i {
             opacity: 0;
         }
