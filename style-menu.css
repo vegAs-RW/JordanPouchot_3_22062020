@@ -754,7 +754,7 @@ header i {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .label__fav1--resto {
+  .label_heart1-resto {
     right: 30px;
     top: -24px;
   }
