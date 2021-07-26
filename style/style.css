@@ -63,7 +63,7 @@
     transform: scaleX(0);
   }
   100% {
-    transform: scaleX(-50px);
+    transform: scaleX(1);
   }
 }
 body {
@@ -150,11 +150,10 @@ h1 {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   background: linear-gradient(174deg, #ff76da 0%, #9356dc 80%);
+  content: "";
   -webkit-background-clip: text;
   -moz-background-clip: text;
-  background-clip: text;
   -webkit-text-fill-color: transparent;
-  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -184,11 +183,10 @@ h1 {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   background: linear-gradient(174deg, #ff76da 0%, #9356dc 80%);
+  content: "";
   -webkit-background-clip: text;
   -moz-background-clip: text;
-  background-clip: text;
   -webkit-text-fill-color: transparent;
-  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -218,11 +216,10 @@ h1 {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   background: linear-gradient(174deg, #ff76da 0%, #9356dc 80%);
+  content: "";
   -webkit-background-clip: text;
   -moz-background-clip: text;
-  background-clip: text;
   -webkit-text-fill-color: transparent;
-  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -252,11 +249,10 @@ h1 {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   background: linear-gradient(174deg, #ff76da 0%, #9356dc 80%);
+  content: "";
   -webkit-background-clip: text;
   -moz-background-clip: text;
-  background-clip: text;
   -webkit-text-fill-color: transparent;
-  content: "";
   position: absolute;
   top: 0;
   left: 0;
