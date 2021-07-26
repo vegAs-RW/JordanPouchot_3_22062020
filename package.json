@@ -1,0 +1,26 @@
+{
+  "name": "projet3-ohmyfood",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./style/style.css --style expanded",
+    "prefix": "postcss ./style/style.css --use autoprefixer -d ./style/prefixed/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vegAs-RW/JordanPouchot_3_22062020.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vegAs-RW/JordanPouchot_3_22062020/issues"
+  },
+  "homepage": "https://github.com/vegAs-RW/JordanPouchot_3_22062020#readme",
+  "dependencies": {
+    "autoprefixer": "^10.3.1",
+    "postcss": "^8.3.6",
+    "postcss-cli": "^8.3.1",
+    "sass": "^1.35.2"
+  }
+}
