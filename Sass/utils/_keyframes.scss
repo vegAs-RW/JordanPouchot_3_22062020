@@ -1,3 +1,5 @@
+// loader
+
 @keyframes loader {
     0% {
         visibility: visible;
@@ -42,6 +44,8 @@
     }
 }
 
+// cascade
+
 @keyframes opacity {
     0% {
               opacity: 0;
@@ -51,7 +55,9 @@
     }
   }
 
-  @keyframes rotate {
+// checkbox
+
+@keyframes rotate {
     0% {
         transform: rotate(0);
     }

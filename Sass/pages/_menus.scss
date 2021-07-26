@@ -6,7 +6,7 @@ main {
 
 /*********** Header **********/
 
-header {
+.header_menu {
     @include flexbox-center;
     position: relative;
     & p {

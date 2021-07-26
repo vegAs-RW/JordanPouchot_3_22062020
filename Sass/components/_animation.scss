@@ -10,9 +10,10 @@
     .label_heart#{$var}-accueil{
         font-size: 2rem;
         position: absolute;
-        top: 5px;
+        top: 225px;
         right: 5%;
         color: black;
+        cursor: pointer;
     }
     .label_heart#{$var}-resto{
         font-size: 1.5rem;
@@ -20,6 +21,7 @@
         position: absolute;
         right: 30px;
         top: 10px;
+        cursor: pointer;
     }
     .label_heart#{$var}-accueil::after, .label_heart#{$var}-resto::after{
         font-family: 'Font Awesome 5 Free';
@@ -27,7 +29,7 @@
         background: linear-gradient(174deg,#ff76da 0%, #9356dc 80%);
     -webkit-background-clip: text;
     -moz-background-clip: text;
-    background-clip: text;
+        background-clip: text;
     -webkit-text-fill-color: transparent;
         content: "\f004";
         position: absolute;
@@ -39,7 +41,7 @@
 }
 
 @for $var from 1 through 4 {
-    #heart#{$var}:checked + .label_heart#{$var}-accueil, #heart#{$var}:checked + .label_heart#{$var}-resto{
+    #heart#{$var}:hover + .label_heart#{$var}-accueil, #heart#{$var}:hover + .label_heart#{$var}-resto{
         i {
             opacity: 0;
         }
