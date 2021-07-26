@@ -96,8 +96,8 @@ main {
             animation: opacity 1s both;
             &:hover .checked_box {
                 @include flexbox-center;
-                animation: slide-left 0.5s ease ;
-                transform-origin: right;
+                animation: slide-left .5s ease;
+                transform-origin: right; 
             }
             &:hover .menu_card_price {
                 padding-right: 70px;

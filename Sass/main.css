@@ -137,8 +137,8 @@
             transform: scaleX(0);
   }
   100% {
-    -webkit-transform: scaleX(-50px);
-            transform: scaleX(-50px);
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
   }
 }
 
@@ -148,8 +148,8 @@
             transform: scaleX(0);
   }
   100% {
-    -webkit-transform: scaleX(-50px);
-            transform: scaleX(-50px);
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
   }
 }
 
@@ -241,10 +241,10 @@ h1 {
   font-family: 'Font Awesome 5 Free';
   font-weight: 900;
   background: linear-gradient(174deg, #ff76da 0%, #9356dc 80%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
   content: "\f004";
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
   position: absolute;
   top: 0;
   left: 0;
@@ -275,10 +275,10 @@ h1 {
   font-family: 'Font Awesome 5 Free';
   font-weight: 900;
   background: linear-gradient(174deg, #ff76da 0%, #9356dc 80%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
   content: "\f004";
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
   position: absolute;
   top: 0;
   left: 0;
@@ -309,10 +309,10 @@ h1 {
   font-family: 'Font Awesome 5 Free';
   font-weight: 900;
   background: linear-gradient(174deg, #ff76da 0%, #9356dc 80%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
   content: "\f004";
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
   position: absolute;
   top: 0;
   left: 0;
@@ -343,10 +343,10 @@ h1 {
   font-family: 'Font Awesome 5 Free';
   font-weight: 900;
   background: linear-gradient(174deg, #ff76da 0%, #9356dc 80%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
   content: "\f004";
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
   position: absolute;
   top: 0;
   left: 0;
@@ -706,8 +706,8 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-animation: slide-left 0.5s ease;
-          animation: slide-left 0.5s ease;
+  -webkit-animation: slide-left .5s ease;
+          animation: slide-left .5s ease;
   -webkit-transform-origin: right;
           transform-origin: right;
 }
